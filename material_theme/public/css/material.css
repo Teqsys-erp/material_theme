@@ -1,5 +1,6 @@
 /* Material3 Design Theme for ERPNext 15 Developed by Itrostack LLP */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 :root {
   --md-sys-color-primary: rgb(60 96 144);
@@ -62,8 +63,8 @@
     --md-shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     --md-shadow-form: inset 0 1px 2px rgb(0 0 0 / 20%);
     /* Typography */
-    --md-font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    --md-font-weight-regular: 400;
+    --md-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+    --md-font-weight-regular: 450;
     --md-font-weight-medium: 500;
     --md-font-weight-bold: 700;
   }
@@ -79,7 +80,7 @@
   
   /* General Styling */
   [data-theme=material] body {
-    font-family: var(--md-font-family);
+    font-family:var(--md-font-family);
     background-color: var(--md-grey-100);
     color: var(--md-grey-900);
     -webkit-font-smoothing: antialiased;
@@ -98,6 +99,21 @@
     transition: color 0.2s ease-in-out;
   }
 */
+
+[data-theme=material] html,
+[data-theme=material] body {
+    background-color: #f2f2f2; /* light material-style background */
+   /* background-image: url("LW002.jpg");*/
+  /*  background-size: cover;   */    /* scale to fill */
+  /*  background-position: center; */ /* center the image */
+  /*  background-repeat: no-repeat;*/ /* prevent tiling */
+   
+}
+
+
+  [data-theme=material] .search-bar .awesomplete input {
+    height: 40px; /* adjust as needed */
+}
   [data-theme=material] a:hover {
     color: var(--md-sys-color-primary);
   }
@@ -116,29 +132,72 @@
   }
   
   /* Containers and Layout */
-  [data-theme=material] .page-container,
-  [data-theme=material] .layout-main-section {
-    background-color: var(--md-sys-color-surface-bright);
+  [data-theme=material] .page-container {
+    background: transparent;
   }
   
   [data-theme=material] .layout-side-section {
     font-size: 14px;
+    background-color:transparent;
+    height:fit-content;
+    padding-top:10px;
+    border-radius:10px;
   }
+
+  [data-theme=material] .sidebar-child-item.nested-container {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+        }
+
+
+  [data-theme=material] .form-footer {
+    position: relative;   /* uncommented */
+    background-color: #f9f9ff; /* material light background */
+    border-radius:10px;
+    padding:0 12px;
+}
+[data-theme=material] .new-timeline .timeline-item {
+    background: transparent;
+}
+[data-theme=material]  .layout-main-section {
+    background: transparent;
+    border:none;
+}
+
+[data-theme=material] .layout-main .layout-main-section {
+    border: none;
+}
+
   
   /* Navigation Bar */
   [data-theme=material] .navbar {
     /* background-color: var(--md-primary) !important; */
-    background: linear-gradient(to right, var(--md-sys-color-primary), var(--md-sys-color-primary)) !important;
+    background:linear-gradient(90deg, rgba(50, 135, 168, 1) 0%, rgba(87, 199, 133, 1) 38%, rgba(240, 227, 108, 1) 100%) !important;
     border: none !important;
     box-shadow: var(--md-shadow-2);
-    height: 56px;
+    height: 60px;
     display: flex;
     align-items: center;
+    justify-content:space-evenly;
+    margin:0px 20px;
+    border-radius:10px;
+    margin-bottom:20px;
+
   }
+
+  [data-theme=material] .sticky-top {
+ 
+    top: 10px;
+   
+}
+
+ [data-theme=material] .flex.fill-width.title-area {
+  
+}
   
   [data-theme=material] .navbar-nav > li > a {
     color: var(--md-sys-color-on-primary) !important;
-    font-weight: 800;
+    font-weight: 400;
     /* padding: 16px; */
     transition: background-color 0.2s;
   }
@@ -151,6 +210,10 @@
   [data-theme=material] .navbar-brand:hover {
     color: var(--md-sys-color-on-primary) !important;
   }
+  [data-theme=material] .frappe-list {
+    background-color: white;
+   }
+
   
   /* Sidebar Navigation */
   [data-theme=material] .standard-sidebar-item {
@@ -183,18 +246,70 @@
   [data-theme=material] .standard-sidebar-item:hover svg {
     fill: var(--md-sys-color-primary);
   }
+
+  [data-theme=material] .form-sidebar.overlay-sidebar.hidden-xs.hidden-sm {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -9px;
+        }
+ [data-theme=material] .list-sidebar.overlay-sidebar.hidden-xs.hidden-sm {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: -10px;
+ }
+
+ [data-theme=material] .sidebar-item-container {
   
-  /* Cards/Widgets */
+    margin-left: 0px;
+}
+
+
+ /* Sidebar collapsed by default */
+[data-theme=material] .layout-side-section {
+    width: 60px; /* Only icons visible */
+    transition: width 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* On hover expand */
+[data-theme=material] .layout-side-section:hover {
+    width: 220px; /* Full expanded size */
+}
+
+/* Sidebar items styling */
+[data-theme=material] .layout-side-section .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+/* Hide text when collapsed */
+[data-theme=material] .layout-side-section:not(:hover) .sidebar-item span {
+    display: none;
+}
+
+/* Show text when expanded */
+[data-theme=material] .layout-side-section:hover .sidebar-item span {
+    display: inline-block;
+}
+
+  
+   /* Cards/Widgets */
   [data-theme=material] .widget {
     /* background-color: var(--md-surface); */
-    background-color: var(--md-sys-color-surface-bright);
-    border: none;
-    border-radius: 4px;
+    background-color:white;
+    border:solid 1px #b8b8b8;
+    border-radius: 10px;
     box-shadow: var(--md-shadow-1);
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
     /* overflow: hidden; */
     /* margin-bottom: 16px; */
-    /* padding: 5px 5px; */
+     padding:16px 15px;
   }
   
   [data-theme=material] .widget:hover {
@@ -233,6 +348,18 @@
   .widget.links-widget-box .link-item .link-content:hover {
     color: white;
   }
+
+  [data-theme=material] .widget.shortcut-widget-box {
+    padding: 15px !important;
+    background:transparent;
+    border-radius: 8px !important;
+  }
+
+  [data-theme=material] .widget.spacer {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
   
   /* Dropdowns */
   [data-theme=material] .dropdown-menu {
@@ -257,7 +384,7 @@
   }
   
   [data-theme=material] .dropdown-menu > li > a {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--md-sys-color-on-primary-container);
     font-weight: 400;
     /* padding: 12px 16px; */
@@ -296,10 +423,10 @@
   
   /* Page Heading */
   [data-theme=material] .page-head {
-    border-bottom: none !important;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
-    background-color: var(--md-sys-color-surface-bright);
+  
+    background:transparent;
     /* padding: 16px 24px; */
+
   }
   
   [data-theme=material] .page-title .title-text {
@@ -325,11 +452,12 @@
   }
   
   [data-theme=material] .navbar-home img {
-    max-height: 48px;
+    max-height: 42px;
     width: auto;
     border-radius: 8px;
-    box-shadow: var(--md-shadow-2) ;
+   
     background-color: var(--md-sys-color-inverse-on-surface);
+    margin-top:5px;
   
     /* Optional: Add a slight lift with transform */
     transform: translateY(-2px);
@@ -340,7 +468,7 @@
   
   /* Buttons */
   [data-theme=material] .btn {
-    border-radius: 4px;
+    border-radius: 5px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.08rem;
@@ -351,10 +479,12 @@
   }
   
   [data-theme=material] .btn-primary {
-    background-color: var(--md-sys-color-primary-container);
-    color: var(--md-sys-color-primary);
+   
+    color: white;
     box-shadow: var(--md-shadow-1);
-    border: 1px solid var(--md-sys-color-primary);
+    background-color: #3388a8;
+
+   
   }
   
   [data-theme=material] .btn-primary:hover,
@@ -363,15 +493,18 @@
   [data-theme=material] .btn-primary:active,
   [data-theme=material] .btn-primary.active,
   [data-theme=material] .open > .dropdown-toggle.btn-primary {
-    background-color: var(--md-sys-color-primary) !important;
+  /*  background-color: var(--md-sys-color-primary) !important;*/
     color: var(--md-sys-color-on-primary) !important;
     box-shadow: var(--md-shadow-1);
   }
   
   [data-theme=material] .btn-default {
-    background-color: transparent;
-    color: var(--md-sys-color-primary);
-    box-shadow: var(--md-shadow-1);
+    background-color: white;
+    color:black;
+   
+    border-style:dashed;
+    border-color:#cbd5e1;
+    border-width:1px;
   }
 
   [data-theme=material] .nav-link.active {
@@ -387,10 +520,8 @@
   [data-theme=material] .btn-default:active,
   [data-theme=material] .btn-default.active,
   [data-theme=material] .open > .dropdown-toggle.btn-default {
-    background-color: var(--md-sys-color-primary-container);
-    color: var(--md-sys-color-primary) !important;
-    box-shadow: var(--md-shadow-1);
-    border-bottom: 1px solid var(--md-sys-color-primary);
+    
+   
   }
   
   [data-theme=material] .btn-secondary {
@@ -411,25 +542,33 @@
   }
   
   [data-theme=material] .std-form-layout > .form-layout > .form-page {
-    background-color: var(--md-sys-color-surface-bright);
+    background-color:white;
   }
   /* Form Controls */
   [data-theme=material] .form-control {
-    border-radius: 4px;
-    border-bottom: 1px solid var(--md-sys-color-primary);
-    box-shadow: var(--md-shadow-form);
+    border-radius: 8px;
+  
+  
     /* padding: 8px 12px; */
-    transition: border-color 0.2s;
-    background-color: var(--md-sys-color-surface-dim);
+   
+    background-color: #fff;
+    height:40px;
+    font-size:16px;
+    border:solid .5px #ccc;
+    outline:none;
+    transition:border-color 0.3s ease, box-shadow 0.3s ease;
+
   }
 
 
   [data-theme=material] .like-disabled-input {
-    /* background-color: #e7eaeb; */
-    background-color: var(--md-sys-color-surface-dim);
-    border-bottom: 1px solid var(--md-sys-color-primary);
-    /* border: 1px solid var(--md-secondary); */
-    box-shadow: var(--md-shadow-form);
+     background-color: #f3f3f3;
+  
+    height:40px;
+    font-size:16px;
+    
+    border:solid 2px #ccc ;
+    outline:none;
   }
 
   .frappe-control .link-btn {
@@ -437,8 +576,8 @@
   }
   
   [data-theme=material] .form-control:focus {
-    border-color: var(--md-sys-color-primary);
-    box-shadow: none;
+    border: solid 4px #ccc;
+    box-shadow: 0 0 rgba(90, 103,216,0.6);
   }
   
   [data-theme=material] .control-label {
@@ -456,6 +595,8 @@
   [data-theme=material] input[type=checkbox]:checked:before {
     color: var(--md-sys-color-on-primary);
   }
+
+
   
   /* Rich Text Editor */
   [data-theme=material] .frappe-control .ql-editor:not(.read-mode) {
@@ -473,8 +614,8 @@
   [data-theme=material] .indicator-pill,
   [data-theme=material] .indicator-pill-right,
   [data-theme=material] .indicator-pill-round {
-    border-radius: 16px;
-    /* padding: 2px 10px; */
+    border-radius: 7px;
+    padding: 12px 6px;
     font-size: 12px;
     font-weight: 500;
     /* box-shadow: var(--md-shadow-2) !important; */
@@ -587,6 +728,10 @@
     color: var(--md-sys-color-on-primary) !important;
     border-radius: 4px;
   }
+
+  [data-theme=material] .justify-content-end {
+        justify-content:end !important;
+  } 
   
   /* material Ripple Effect (needs JavaScript to fully implement) */
   .md-ripple {
@@ -622,4 +767,44 @@
   [data-theme=material] .notifications-icon svg {
     stroke: var(--md-sys-color-on-primary);
     fill: var(--md-sys-color-on-primary);
+    transition: fill 0.3s ease, stroke 0.3s ease;
   }
+  [data-theme=material] .standard-sidebar-item .item-anchor {
+    display: flex;
+    overflow: hidden;
+    padding: 9px 0px 9px 8px;
+    flex: 1;
+    
+}
+
+
+
+[data-theme=material] button.btn-reset.nav-link.notifications-icon.text-muted {
+ 
+    height: 26px;
+    border-radius: 17px;
+    width: 30px;
+    text-align: center;
+    transition: all 0.3s ease; /* smooth animation */
+}
+
+[data-theme=material] button.btn-reset.nav-link.notifications-icon.text-muted:focus,
+[data-theme=material] button.btn-reset.nav-link.notifications-icon.text-muted:active,
+[data-theme=material] button.btn-reset.nav-link.notifications-icon.text-muted:hover {
+    background-color: white !important;
+    outline: none; /* optional */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15); /* subtle glow effect */
+}
+
+
+[data-theme=material] .new-timeline .timeline-actions {
+    background:transparent;
+}
+
+[data-theme=material] .page-card-head {
+    background-color: red;
+}
+
+[data-theme=material] .login-content .page-card {
+        background-color:red;
+}
