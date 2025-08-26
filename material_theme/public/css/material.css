@@ -532,7 +532,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
   [data-theme=material] .btn-default:active,
   [data-theme=material] .btn-default.active,
   [data-theme=material] .open > .dropdown-toggle.btn-default {
-	  background-color:#ffdad5;
+          background-color:#ffdad5;
     
    
   }
@@ -811,7 +811,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
 }
 
 [data-theme=material] button.btn-reset.nav-link {
-	color:white;
+        color:white;
 }
 
 [data-theme=material] .new-timeline .timeline-actions {
@@ -824,4 +824,8 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
 
 [data-theme=material] .login-content .page-card {
         background-color:red;
+}
+[data-theme=material] .avatar-group .avatar .avatar-frame {
+    border: 1px solid var(--avatar-frame-border);
+    background-color: #ebebeb;
 }
