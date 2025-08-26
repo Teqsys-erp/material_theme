@@ -53,7 +53,7 @@ function applyMaterialTheme(SelectedColor)
 material.theme.clear_demo = function () {
 	var themeColor = localStorage.getItem("ItrostackThemeColor");
 	if(!themeColor)
-		themeColor = "#3C6090";
+		themeColor = "#c00007";
 	// new dialog
 	var d = new frappe.ui.Dialog({
 		title: "Select Color",
