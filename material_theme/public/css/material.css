@@ -794,7 +794,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
 
 
 [data-theme=material] button.btn-reset.nav-link.notifications-icon.text-muted {
-    background-color:white;
+    
     height: 26px;
     border-radius: 17px;
     width: 30px;
