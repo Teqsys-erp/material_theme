@@ -25,7 +25,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = ["/assets/material_theme/css/material.css",
+app_include_css = ["/assets/material_theme/css/material.css?v=1.0",
                    ]
 app_include_js = [
                     "/assets/material_theme/js/material.js",
