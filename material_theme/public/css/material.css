@@ -69,7 +69,7 @@
     --md-font-weight-medium: 500;
     --md-font-weight-bold: 700;
   }
-  
+
   [data-theme=material] {
     /* Map your theme variables to material Design variables */
     --primary: var(--md-sys-color-primary);
@@ -78,7 +78,7 @@
     --blue-avatar-color: var(--md-sys-color-primary);
     --blue: var(--md-sys-color-primary);
   }
-  
+
   /* General Styling */
   [data-theme=material] body {
     font-family:var(--md-font-family);
@@ -93,7 +93,7 @@
     letter-spacing: 0.15px;
     line-height: 1.5; */
   }
-/*   
+/*
   [data-theme=material] a {
     font-weight: 500;
     text-decoration: none;
@@ -108,7 +108,7 @@
   /*  background-size: cover;   */    /* scale to fill */
   /*  background-position: center; */ /* center the image */
   /*  background-repeat: no-repeat;*/ /* prevent tiling */
-   
+
 }
 
 
@@ -118,25 +118,25 @@
   [data-theme=material] a:hover {
     color: var(--md-sys-color-primary);
   }
-  
-  [data-theme=material] .small, 
+
+  [data-theme=material] .small,
   [data-theme=material] small {
     font-size: 95%;
   }
-  
-  [data-theme=material] .h6.uppercase, 
+
+  [data-theme=material] .h6.uppercase,
   [data-theme=material] h6.uppercase {
     font-weight: 500;
     font-size: 0.875rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
-  
+
   /* Containers and Layout */
   [data-theme=material] .page-container {
     background: transparent;
   }
-  
+
   [data-theme=material] .layout-side-section {
     font-size: 14px;
     background-color:transparent;
@@ -174,10 +174,10 @@
 background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 243, 1) 70%);
 }
 
-  
+
   /* Navigation Bar */
   [data-theme=material] .navbar {
-     background-color:#c00007;
+    /* background-color:#c00007;*/
    /* background:linear-gradient(90deg, rgba(50, 135, 168, 1) 0%, rgba(87, 199, 133, 1) 38%, rgba(240, 227, 108, 1) 100%) !important;*/
     border: none !important;
     box-shadow: var(--md-shadow-2);
@@ -192,27 +192,27 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
   }
 
   [data-theme=material] .sticky-top {
- 
+
     top: 10px;
-   
+
 }
 
  [data-theme=material] .flex.fill-width.title-area {
-  
+
 }
-  
+
   [data-theme=material] .navbar-nav > li > a {
-    color: var(--md-sys-color-on-primary) !important;
+    color: black !important;
     font-weight: 400;
     /* padding: 16px; */
     transition: background-color 0.2s;
   }
-  
+
   /* [data-theme=material] .navbar-nav > li > a:hover {
     background-color: rgba(255, 255, 255, 0.1) !important;
     color: var(--md-sys-color-on-primary) !important;
   } */
-  
+
   [data-theme=material] .navbar-brand:hover {
     color: var(--md-sys-color-on-primary) !important;
   }
@@ -220,35 +220,35 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     background-color: white;
    }
 
-  
+
   /* Sidebar Navigation */
   [data-theme=material] .standard-sidebar-item {
     /* border-radius: 0 24px 24px 0; */
     margin-right: 8px;
     transition: background-color 0.2s;
   }
-  
+
   [data-theme=material] .standard-sidebar-item.selected {
     background-color: var(--md-sys-color-primary);
     box-shadow: var(--md-shadow-2);
   }
-  
+
   [data-theme=material] .standard-sidebar-item.selected a {
     color: var(--md-sys-color-on-primary);
   }
-  
+
   [data-theme=material] .standard-sidebar-item.selected a svg {
     fill: var(--md-sys-color-on-primary);
   }
-  
+
   [data-theme=material] .standard-sidebar-item:hover {
     background-color: var(--md-sys-color-primary-container);
   }
-  
+
   [data-theme=material] .standard-sidebar-item:hover a {
     color: var(--md-sys-color-primary);
   }
-  
+
   [data-theme=material] .standard-sidebar-item:hover svg {
     fill: var(--md-sys-color-primary);
   }
@@ -267,7 +267,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
  }
 
  [data-theme=material] .sidebar-item-container {
-  
+
     margin-left: 0px;
 }
 
@@ -277,7 +277,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     width: 60px; /* Only icons visible */
     transition: width 0.3s ease;
     overflow: hidden;
-  
+
 }
 
 /* On hover expand */
@@ -310,7 +310,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     flex-wrap: wrap;
 }
 
-  
+
    /* Cards/Widgets */
   [data-theme=material] .widget {
     /* background-color: var(--md-surface); */
@@ -323,36 +323,36 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     /* margin-bottom: 16px; */
      padding:16px 15px;
   }
-  
+
   [data-theme=material] .widget:hover {
     box-shadow: var(--md-shadow-2);
     border-bottom: 1px solid var(--md-sys-color-primary);
   }
-  
+
   /* [data-theme=material] .widget .widget-head {
     padding: 16px;
   } */
-  
+
   [data-theme=material] .widget .widget-head .widget-title {
     font-size: 15px;
     font-weight: 500;
     color: var(--md-sys-color-on-primary-container);
   }
-  
+
   [data-theme=material] .widget.shortcut-widget-box .widget-head .widget-title i {
     color: var(--md-sys-color-primary);
   }
-  
+
   /* [data-theme=material] .widget-body {
     padding: 8px 16px 16px 16px;
   } */
-  
+
   [data-theme=material] .widget-body .link-item {
     /* padding: 8px 16px; */
     border-radius: 4px;
     /* transition: background-color 0.2s, color 0.2s; */
   }
-  
+
   [data-theme=material] .widget-body .link-item:hover {
     color: var(--md-sys-color-on-primary);
     background-color: var(--md-sys-color-primary);
@@ -372,7 +372,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     background-color: transparent !important;
     box-shadow: none !important;
   }
-  
+
   /* Dropdowns */
   [data-theme=material] .dropdown-menu {
     border-radius: 4px;
@@ -394,14 +394,14 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     box-shadow: var(--md-shadow-1);
     font-weight: bold;
   }
-  
+
   [data-theme=material] .dropdown-menu > li > a {
     font-size: 16px;
     color: var(--md-sys-color-on-primary-container);
     font-weight: 400;
     /* padding: 12px 16px; */
   }
-  
+
   /* [data-theme=material] .dropdown-menu > li > a:hover {
     background-color: rgba(98, 0, 238, 0.08);
     color: var(--md-primary);
@@ -416,38 +416,38 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     box-shadow: var(--md-shadow-2);
     border: none;
   }
-  
+
   [data-theme=material] .awesomplete > ul > li {
     /* padding: 12px 16px; */
     transition: background-color 0.2s, color 0.2s;
   }
-  
+
   [data-theme=material] .awesomplete > ul > li[aria-selected=true] {
     background-color: var(--md-sys-color-primary-container);
     color: var(--md-sys-color-primary);
   }
- 
+
   [data-theme=material] .awesomplete > ul > li:hover {
     background-color: var(--md-sys-color-primary-container);
     color: var(--md-sys-color-primary) !important;
     box-shadow: var(--md-shadow-1);
-  } 
-  
+  }
+
   /* Page Heading */
   [data-theme=material] .page-head {
-  
+
     background:transparent;
     /* padding: 16px 24px; */
 
   }
-  
+
   [data-theme=material] .page-title .title-text {
     color: var(--md-sys-color-on-primary-container);
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 0.15px;
   }
-  
+
   [data-theme=material] .section-head {
     font-size: 16px;
     /* font-weight: 500; */
@@ -455,29 +455,29 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     letter-spacing: 0.15px;
     /* margin: 24px 0 16px 0; */
   }
-  
+
   /* List Views */
   [data-theme=material] .list-row-head {
     /* background-color: var(--md-surface); */
     border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
     /* padding: 8px 16px; */
   }
-  
+
   [data-theme=material] .navbar-home img {
     max-height: 42px;
     width: auto;
     border-radius: 8px;
-   
- 
+
+
     margin-top:5px;
-  
+
     /* Optional: Add a slight lift with transform */
     transform: translateY(-2px);
-  
+
     /* Smooth transitions for hover effects */
     transition: all 0.3s ease;
   }
-  
+
   /* Buttons */
   [data-theme=material] .btn {
     border-radius: 5px;
@@ -489,16 +489,16 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     box-shadow: none;
     border: none;
   }
-  
+
   [data-theme=material] .btn-primary {
-   
+
     color: white;
     box-shadow: var(--md-shadow-1);
     background-color: #c00007;
 
-   
+
   }
-  
+
   [data-theme=material] .btn-primary:hover,
   [data-theme=material] .btn-primary:focus,
   [data-theme=material] .btn-primary.focus,
@@ -509,11 +509,11 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     color: var(--md-sys-color-on-primary) !important;
     box-shadow: var(--md-shadow-1);
   }
-  
+
   [data-theme=material] .btn-default {
     background-color: white;
     color:black;
-   
+
     border-style:dashed;
     border-color:#cbd5e1;
     border-width:1px;
@@ -525,7 +525,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     border-bottom: 3px solid var(--md-sys-color-primary) !important;
     /* box-shadow: var(--md-shadow-4); */
   }
-  
+
   [data-theme=material] .btn-default:hover,
   [data-theme=material] .btn-default:focus,
   [data-theme=material] .btn-default.focus,
@@ -533,16 +533,16 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
   [data-theme=material] .btn-default.active,
   [data-theme=material] .open > .dropdown-toggle.btn-default {
           background-color:#ffdad5;
-    
-   
+
+
   }
-  
+
   [data-theme=material] .btn-secondary {
     background-color: var(--md-sys-color-primary-container) !important;
     color: var(--md-sys-color-primary);
     box-shadow: var(--md-shadow-1);
   }
-  
+
   [data-theme=material] .btn-secondary:hover,
   [data-theme=material] .btn-secondary:focus,
   [data-theme=material] .btn-secondary.focus,
@@ -553,17 +553,17 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     color: var(--md-sys-color-on-primary) !important;
     box-shadow: var(--md-shadow-2);
   }
-  
+
   [data-theme=material] .std-form-layout > .form-layout > .form-page {
     background-color:white;
   }
   /* Form Controls */
   [data-theme=material] .form-control {
     border-radius: 8px;
-  
-  
+
+
     /* padding: 8px 12px; */
-   
+
     background-color: #fff;
     height:40px;
     font-size:16px;
@@ -576,10 +576,10 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
 
   [data-theme=material] .like-disabled-input {
      background-color: #f3f3f3;
-  
+
     height:auto;
     font-size:16px;
-    
+
     border:solid 2px #ccc ;
     outline:none;
   }
@@ -587,41 +587,41 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
   .frappe-control .link-btn {
     background-color: unset;
   }
-  
+
   [data-theme=material] .form-control:focus {
     border: solid 4px #ccc;
     box-shadow: 0 0 rgba(90, 103,216,0.6);
   }
-  
+
   [data-theme=material] .control-label {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 8px;
   }
-  
+
   /* Checkboxes */
   [data-theme=material] input[type=checkbox] {
     border-radius: 2px;
     transition: background-color 0.2s;
   }
-    
+
   [data-theme=material] input[type=checkbox]:checked:before {
     color: var(--md-sys-color-on-primary);
   }
 
 
-  
+
   /* Rich Text Editor */
   [data-theme=material] .frappe-control .ql-editor:not(.read-mode) {
     /* background: var(--md-surface); */
     border: 1px solid rgba(0, 0, 0, 0.23);
     border-radius: 4px;
   }
-  
-  /* .ellipsis, .awesomplete > [role=listbox] > li, .awesomplete > [role=listbox] > [role=option], .widget.shortcut-widget-box .indicator-pill 
+
+  /* .ellipsis, .awesomplete > [role=listbox] > li, .awesomplete > [role=listbox] > [role=option], .widget.shortcut-widget-box .indicator-pill
   {
     overflow: visible;
-    
+
   } */
   /* Indicators and Badges */
   [data-theme=material] .indicator-pill,
@@ -633,7 +633,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     font-weight: 500;
     /* box-shadow: var(--md-shadow-2) !important; */
   }
-  
+
   [data-theme=material] .indicator-pill.grey,
   [data-theme=material] .indicator-pill-right.grey,
   [data-theme=material] .indicator-pill-round.grey {
@@ -649,7 +649,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     color: white;
     box-shadow: var(--md-shadow-2);
   }
-  
+
   [data-theme=material] .indicator-pill.green,
   [data-theme=material] .indicator-pill-right.green,
   [data-theme=material] .indicator-pill-round.green {
@@ -721,7 +721,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     color: white;
     box-shadow: var(--md-shadow-2);
   }
-  
+
   [data-theme=material] .document-link-badge .count {
     background-color: var(--md-sys-color-primary) !important;
     color: white !important;
@@ -729,13 +729,13 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     border-radius: 2px !important;
     padding: 2px 8px;
   }
-  
+
   [data-theme=material] .document-link-badge {
     /* background-color: var(--md-surface) !important; */
     border-radius: 4px !important;
     box-shadow: var(--md-shadow-1);
   }
-  
+
   [data-theme=material] .document-link button {
     /* background: var(--md-primary) !important; */
     color: var(--md-sys-color-on-primary) !important;
@@ -744,14 +744,14 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
 
   [data-theme=material] .justify-content-end {
         justify-content:end !important;
-  } 
-  
+  }
+
   /* material Ripple Effect (needs JavaScript to fully implement) */
   .md-ripple {
     position: relative;
     overflow: hidden;
   }
-  
+
   .md-ripple:after {
     content: "";
     display: block;
@@ -768,14 +768,14 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     opacity: 0;
     transition: transform .5s, opacity 1s;
   }
-  
+
   .md-ripple:active:after {
     transform: scale(0, 0);
     opacity: .2;
     transition: 0s;
   }
-  
-  
+
+
   /* Notifications */
   [data-theme=material] .notifications-icon svg {
     stroke: var(--md-sys-color-on-primary);
@@ -787,14 +787,14 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
     overflow: hidden;
     padding: 9px 0px 9px 8px;
     flex: 1;
-    
+
 }
 
 
 
 
 [data-theme=material] button.btn-reset.nav-link.notifications-icon.text-muted {
-    
+
     height: 26px;
     border-radius: 17px;
     width: 30px;
@@ -811,7 +811,7 @@ background: linear-gradient(100deg, rgba(244, 248, 255, 1) 30%, rgba(255, 243, 2
 }
 
 [data-theme=material] button.btn-reset.nav-link {
-        color:white;
+        color:black;
 }
 
 [data-theme=material] .new-timeline .timeline-actions {
