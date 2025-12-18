@@ -1,6 +1,6 @@
 /* Material3 Design Theme for ERPNext 15 Developed by Itrostack LLP */
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 :root {
@@ -64,7 +64,7 @@
     --md-shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     --md-shadow-form: inset 0 1px 2px rgb(0 0 0 / 20%);
     /* Typography */
-    --md-font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+    --md-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
     --md-font-weight-regular: 450;
     --md-font-weight-medium: 500;
     --md-font-weight-bold: 700;
